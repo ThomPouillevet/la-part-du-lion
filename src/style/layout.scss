@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@400;800;900&family=Lato:wght@300;400;700&display=swap");
+
+:root {
+  --defaultFont: "Lato", sans-serif;
+  --headerFont: "Alegreya", sans-serif;
+  --primaryColor: #e21e8f;
+  --emeraldGreen: #2ccab2;
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --darkGrey: #afafaf;
+  --mainTransition: all 0.3s linear;
+  --lightShadow: 0.2rem 0.5rem 0.3rem 0rem rgba(0, 0, 0, 0.5);
+  --darkShadow: 0.4rem 1rem 0.5rem 0rem rgba(0, 0, 0, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%; /* Now 10px = 1rem! */
+}
+
+body {
+  background: var(--mainWhite);
+  color: var(--mainBlack);
+  font-family: var(--defaultFont);
+  font-size: 16px; /* px fallback */
+  font-size: 1.6rem; /* default font-size for document */
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--headerFont);
+  font-weight: 700;
+  letter-spacing: var(--mainSpacing);
+  margin-bottom: 1.25rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
