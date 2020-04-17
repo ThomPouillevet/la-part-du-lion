@@ -1,10 +1,11 @@
-import React from 'react'
+import React from "react"
+import Layout from "../components/Layout"
 
 const dishes = () => {
   return (
-    <div>
+    <Layout>
       <h1>Dishes page</h1>
-    </div>
+    </Layout>
   )
 }
 

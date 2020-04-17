@@ -1,10 +1,11 @@
-import React from 'react'
+import React from "react"
+import Layout from "../components/Layout"
 
 const starters = () => {
   return (
-    <div>
+    <Layout>
       <h1>Starters page</h1>
-    </div>
+    </Layout>
   )
 }
 
