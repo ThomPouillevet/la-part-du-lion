@@ -13,7 +13,7 @@
     transition: var(--mainTransition);
     font-weight: bold;
     &:hover {
-      color: var(--mainBlack);
+      color: var(--yellowFlash);
     }
   }
   .icons a {
@@ -23,7 +23,7 @@
     color: var(--mainWhite);
     transition: var(--mainTransition);
     &:hover {
-      color: var(--mainBlack);
+      color: var(--yellowFlash);
     }
     &.linkedin-icon:hover {
       color: #0077b5;
