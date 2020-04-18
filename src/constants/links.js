@@ -1,15 +1,15 @@
 export default [
   {
     path: "/",
-    text: "home",
+    text: "Home",
   },
   {
     path: "/starters",
-    text: "starters",
+    text: "entrées",
   },
   {
     path: "/dishes",
-    text: "dishes",
+    text: "plats",
   },
   {
     path: "/desserts",
