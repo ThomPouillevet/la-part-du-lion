@@ -10,6 +10,7 @@
   --mainBlack: #222;
   --mainGrey: #ececec;
   --darkGrey: #afafaf;
+  --mainSpacing: 0.25rem;
   --mainTransition: all 0.3s linear;
   --lightShadow: 0.2rem 0.5rem 0.3rem 0rem rgba(0, 0, 0, 0.5);
   --darkShadow: 0.4rem 1rem 0.5rem 0rem rgba(0, 0, 0, 0.5);
@@ -32,7 +33,6 @@ body {
   font-size: 16px; // px fallback
   font-size: 1.6rem; // default font-size for document
   line-height: 1.5;
-  padding-top: 5.92rem; // Navheight
 }
 
 h1,
@@ -75,10 +75,4 @@ main {
   padding: 0;
   position: absolute;
   width: 1px;
-}
-
-@media (min-width: 800px) {
-  body {
-    padding-top: 7.7rem;
-  }
 }

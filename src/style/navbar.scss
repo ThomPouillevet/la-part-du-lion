@@ -1,6 +1,7 @@
 .navbar {
   background-color: var(--mainWhite);
   display: block;
+  height: 5.92rem;
   margin: 0;
   padding: 0;
 
@@ -125,6 +126,7 @@
   }
 
   @media (min-width: 800px) {
+    height: 7.7rem;
     .navbar-top {
       display: flex;
       height: 7.7rem;
