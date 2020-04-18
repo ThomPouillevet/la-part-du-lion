@@ -1,6 +1,6 @@
 import React from "react"
 import 'bootstrap/dist/css/bootstrap.min.css'
-import "../style/layout.scss"
+import "../styles/layout.scss"
 import Navbar from "./Navbar"
 import Footer from "./Footer"
 

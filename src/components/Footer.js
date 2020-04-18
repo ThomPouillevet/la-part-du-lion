@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from "gatsby"
-import "../style/footer.scss"
+import "../styles/footer.scss"
 import links from "../constants/links"
 import socialIcons from "../constants/social-icons"
 

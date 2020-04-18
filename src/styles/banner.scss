@@ -1,0 +1,30 @@
+.banner {
+  text-align: center;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainWhite);
+  h1 {
+    font-size: 3.3rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+  }
+  p {
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+    &.fake-info {
+      font-style: italic;
+      text-decoration: line-through;
+      text-decoration-color: var(--primaryColor);
+      text-decoration-thickness: 0.22rem;
+    }
+  }
+  @media screen and (min-width: 800px) {
+    h1 {
+      font-size: 4.5rem;
+    }
+    p {
+      width: 70%;
+    }
+  }
+}

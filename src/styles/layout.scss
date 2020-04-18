@@ -1,11 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@400;800;900&family=Lato:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,800;1,800&family=Lato:wght@300;400;700&display=swap");
 
 :root {
   --defaultFont: "Lato", sans-serif;
   --headerFont: "Alegreya", sans-serif;
   --primaryColor: #e21e8f;
+  --primaryColorHover: #db4ea0;
   --emeraldGreen: #2ccab2;
-  --yellowFlash: #FBFB46;
+  --yellowFlash: #fbfb46;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
   --mainBlack: #222;
@@ -52,6 +53,15 @@ p {
   margin-bottom: 1.25rem;
 }
 
+.default-hero {
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/banner-img.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  min-height: calc(100vh - 37rem);
+}
+
 a {
   color: var(--mainBlack);
   text-decoration: none;
@@ -76,4 +86,24 @@ main {
   padding: 0;
   position: absolute;
   width: 1px;
+}
+
+.prmry-btn {
+  background-color: var(--primaryColor);
+  border-radius: 0.4rem;
+  color: white;
+  display: block;
+  margin: 2rem auto 0 auto;
+  padding: 1rem 2rem;
+  width: max-content;
+  &:hover {
+    background-color: var(--primaryColorHover);
+    color: white;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .default-hero {
+    min-height: calc(100vh - 20rem);
+  }
 }
