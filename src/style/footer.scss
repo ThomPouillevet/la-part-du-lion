@@ -1,0 +1,32 @@
+.footer {
+  margin-top: auto;
+  background: var(--primaryColor);
+  padding: 2rem;
+  text-align: center;
+  color: var(--mainWhite);
+  .links a {
+    display: inline-block;
+    text-transform: uppercase;
+    color: var(--mainWhite);
+    margin: 0rem 1rem 0.5rem 1rem;
+    letter-spacing: var(--mainSpacing);
+    transition: var(--mainTransition);
+    font-weight: bold;
+    &:hover {
+      color: var(--mainBlack);
+    }
+  }
+  .icons a {
+    display: inline-block;
+    margin: 0 1rem;
+    font-size: 1.3rem;
+    color: var(--mainWhite);
+    transition: var(--mainTransition);
+    &:hover {
+      color: var(--mainBlack);
+    }
+    &.linkedin-icon:hover {
+      color: #0077b5;
+    }
+  }
+}
