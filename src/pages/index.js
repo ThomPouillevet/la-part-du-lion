@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/Layout"
 import SimpleHero from "../components/SimpleHero"
 import Banner from "../components/Banner"
@@ -10,7 +9,7 @@ export default () => (
       <Banner
         title="La Part du Lion"
         fakeInfo="Venez comme vous êt..."
-        info="Le plaisir de la cuisine maison."
+        info="Des idées de recettes pendant le confinement."
       />
     </SimpleHero>
   </Layout>
