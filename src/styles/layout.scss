@@ -2,9 +2,9 @@
 
 :root {
   --defaultFont: "Lato", sans-serif;
-  --headerFont: "Alegreya", sans-serif;
+  --headerFont: "Lato", sans-serif;
   --primaryColor: #e21e8f;
-  --primaryColorHover: #db4ea0;
+  --primaryColorHover: #b41672;
   --emeraldGreen: #2ccab2;
   --yellowFlash: #fbfb46;
   --mainWhite: #fff;
@@ -14,8 +14,8 @@
   --darkGrey: #afafaf;
   --mainSpacing: 0.25rem;
   --mainTransition: all 0.3s linear;
-  --lightShadow: 0.2rem 0.5rem 0.3rem 0rem rgba(0, 0, 0, 0.5);
-  --darkShadow: 0.4rem 1rem 0.5rem 0rem rgba(0, 0, 0, 0.5);
+  --lightShadow: 0.1rem 0.3rem 0.3rem 0rem rgba(30, 30, 30, 0.1);
+  --darkShadow: 0.4rem 0.6rem 0.5rem 0rem rgba(30, 30, 30, 0.1);
 }
 
 * {
@@ -92,6 +92,7 @@ main {
   background-color: var(--primaryColor);
   border-radius: 0.4rem;
   color: white;
+  cursor: pointer;
   display: block;
   margin: 2rem auto 0 auto;
   padding: 1rem 2rem;

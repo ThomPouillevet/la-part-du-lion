@@ -1,0 +1,36 @@
+.recipe {
+  border-top: solid 0.5rem var(--primaryColor);
+  border-radius: 5px;
+  box-shadow: var(--lightShadow);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 350px;
+  transition: var(--mainTransition);
+  width: 100%;
+  &:hover {
+    box-shadow: var(--darkShadow);
+    margin-top: -1rem;
+  }
+
+  .img-container {
+    position: relative;
+    .tag {
+      display: block;
+      background-color: var(--primaryColor);
+      color: white;
+      padding: 2px 10px;
+      position: absolute;
+      border-radius: 25px;
+      font-size: 11px;
+      &.duration-tag {
+        right: 2rem;
+        bottom: 2rem;
+      }
+      &.type-tag {
+        left: 2rem;
+        bottom: 2rem;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

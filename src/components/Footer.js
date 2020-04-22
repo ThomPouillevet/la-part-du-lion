@@ -1,13 +1,13 @@
 import React from 'react'
-import {Link} from "gatsby"
+// import {Link} from "gatsby"
 import "../styles/footer.scss"
-import links from "../constants/links"
+// import links from "../constants/links"
 import socialIcons from "../constants/social-icons"
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="links">
+      {/* <div className="links">
         {links.map((item, index) => {
           return (
             <Link key={index} to={item.path}>
@@ -15,7 +15,7 @@ const Footer = () => {
             </Link>
           )
         })}
-      </div>
+      </div> */}
       <div className="icons">
         {socialIcons.map((item, index) => {
           return (

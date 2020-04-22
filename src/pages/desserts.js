@@ -1,12 +1,14 @@
 import React from "react"
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
+import Wave from "../components/Home/Wave"
 import { graphql } from "gatsby"
 
 const desserts = ({ data }) => {
   return (
     <Layout>
       <StyledHero img={data.dessertImg.childImageSharp.fluid} />
+      <Wave />
       <h1>Desserts page</h1>
     </Layout>
   )
