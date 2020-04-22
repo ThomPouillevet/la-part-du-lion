@@ -1,5 +1,5 @@
 import React from "react"
-import Recipe from "../Recipes/Recipe"
+import RecipeCard from "../Recipes/RecipeCard"
 import { useStaticQuery, graphql } from "gatsby"
 import "../../styles/recipes.scss"
 
@@ -43,7 +43,7 @@ const RecentRecipes = () => {
     <section className="recipes">
       <div className="center">
         {recipes.map(({ node }) => {
-          return <Recipe key={node.contentful_id} recipe={node} />
+          return <RecipeCard key={node.contentful_id} recipe={node} />
         })}
       </div>
     </section>

@@ -3,14 +3,13 @@ import '../../styles/wave.scss'
 
 const Wave = (rgbColor="255,255,255") => {
   return (
-    <div>
       <svg
         className="waves"
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
         viewBox="0 24 150 28"
         preserveAspectRatio="none"
-        shape-rendering="auto"
+        shapeRendering="auto"
       >
         <defs>
           <path
@@ -40,7 +39,6 @@ const Wave = (rgbColor="255,255,255") => {
           <use xlinkHref="#gentle-wave" x="48" y="7" fill="#fff" />
         </g>
       </svg>
-    </div>
   )
 }
 

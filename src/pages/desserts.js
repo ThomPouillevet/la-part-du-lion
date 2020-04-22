@@ -3,13 +3,16 @@ import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
 import Wave from "../components/Home/Wave"
 import { graphql } from "gatsby"
+import Title from "../components/Title"
+import Recipes from "../components/Recipes/Recipes"
 
 const desserts = ({ data }) => {
   return (
     <Layout>
       <StyledHero img={data.dessertImg.childImageSharp.fluid} />
       <Wave />
-      <h1>Desserts page</h1>
+      <Title text="Desserts" />
+      <Recipes typeFilter="dessert" />
     </Layout>
   )
 }

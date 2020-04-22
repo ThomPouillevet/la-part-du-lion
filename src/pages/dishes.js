@@ -2,6 +2,9 @@ import React from "react"
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
 import Wave from "../components/Home/Wave"
+import Title from "../components/Title"
+import Recipes from "../components/Recipes/Recipes"
+
 
 import { graphql } from "gatsby"
 
@@ -10,7 +13,8 @@ const dishes = ({ data }) => {
     <Layout>
       <StyledHero img={data.dishImg.childImageSharp.fluid} />
       <Wave />
-      <h1>Dishes page</h1>
+      <Title text="Plats" />
+      <Recipes typeFilter="dish" />
     </Layout>
   )
 }
