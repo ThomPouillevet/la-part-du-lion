@@ -1,0 +1,54 @@
+.recipe-template {
+  max-width: 80rem;
+
+  .duration {
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .ingredients-container,
+  .steps-container,
+  .author {
+    margin-bottom: 7rem;
+    h3 {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .ingredients-container {
+    ul {
+      list-style-type: none;
+      padding-left: 3rem;
+      li {
+        margin-bottom: 0.7rem;
+        &::before {
+          content: "\2022";
+          color: var(--primaryColor);
+          font-weight: bold;
+          display: inline-block;
+          margin-left: -1em;
+          width: 1.5em;
+        }
+      }
+    }
+  }
+
+  .steps-container {
+    h4 {
+      color: var(--primaryColor);
+    }
+
+    .steps-list {
+      margin-left: 38px;
+      p {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+
+  .author {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+}

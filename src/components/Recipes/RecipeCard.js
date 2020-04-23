@@ -40,7 +40,7 @@ const RecipeCard = ({ recipe }) => {
   let recipeImage = image ? image.fluid : defaultImage.defaultImg.childImageSharp.fluid
 
   return (
-    <Link className="link" to={`/${type}/${slug}`}>
+    <Link className="link" to={`/recipes/${type}/${slug}`}>
       <article className="recipe-card">
         <div className="img-container">
           <Image
