@@ -6,7 +6,6 @@ import Title from "../components/Title"
 import "../styles/recipe-template.scss"
 
 const RecipeTemplate = ({ data }) => {
-
   const { title, duration, firstname, ingredients, steps, image } = data.recipe
 
   return (
@@ -17,11 +16,11 @@ const RecipeTemplate = ({ data }) => {
         <p className="duration">⏱ {duration}</p>
         <div className="ingredients-container">
           <h3>Ingrédients 🥣</h3>
-          <ul>
-            {ingredients.data.map(ingredient => {
-              return <li>{ingredient}</li>
+          <div className="ingredients-list">
+            {ingredients.data.map((ingredient, index) => {
+              return <p>{ingredient}</p>
             })}
-          </ul>
+          </div>
         </div>
         <div className="steps-container">
           <h3>Étapes de préparation 🎨</h3>

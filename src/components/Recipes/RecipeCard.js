@@ -15,29 +15,24 @@ const getDefaultImg = graphql`
   }
 `
 
-  const typeTranslated = (type) => {
-    switch (type) {
-      case "starter":
-        return "entrée"
-      case "dish":
-        return "plat"
-      default:
-        return "dessert"
-    }
+const typeTranslated = type => {
+  switch (type) {
+    case "starter":
+      return "entrée"
+    case "dish":
+      return "plat"
+    default:
+      return "dessert"
   }
+}
 
 const RecipeCard = ({ recipe }) => {
   const defaultImage = useStaticQuery(getDefaultImg)
-  const {
-    title,
-    type,
-    duration,
-    image,
-    slug,
-  } = recipe
+  const { title, type, duration, image, slug } = recipe
 
-
-  let recipeImage = image ? image.fluid : defaultImage.defaultImg.childImageSharp.fluid
+  let recipeImage = image
+    ? image.fluid
+    : defaultImage.defaultImg.childImageSharp.fluid
 
   return (
     <Link className="link" to={`/recipes/${type}/${slug}`}>

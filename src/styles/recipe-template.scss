@@ -17,18 +17,16 @@
   }
 
   .ingredients-container {
-    ul {
-      list-style-type: none;
-      padding-left: 3rem;
-      li {
-        margin-bottom: 0.7rem;
+    .ingredients-list {
+      margin-left: 4.4rem;
+      p {
+        position: relative;
         &::before {
           content: "\2022";
           color: var(--primaryColor);
           font-weight: bold;
-          display: inline-block;
-          margin-left: -1em;
-          width: 1.5em;
+          position: absolute;
+          left: -25px;
         }
       }
     }
@@ -40,7 +38,7 @@
     }
 
     .steps-list {
-      margin-left: 38px;
+      margin-left: 2rem;
       p {
         margin-bottom: 4rem;
       }
