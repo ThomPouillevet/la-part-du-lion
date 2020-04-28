@@ -18,7 +18,7 @@ const RecipeTemplate = ({ data }) => {
           <h3>Ingrédients 🥣</h3>
           <div className="ingredients-list">
             {ingredients.data.map((ingredient, index) => {
-              return <p>{ingredient}</p>
+              return <p key={index}>{ingredient}</p>
             })}
           </div>
         </div>
@@ -27,7 +27,7 @@ const RecipeTemplate = ({ data }) => {
           <div className="steps-list">
             {steps.data.map((step, index) => {
               return (
-                <React.Fragment>
+                <React.Fragment key={index}>
                   <h4>Étape {parseInt(index) + 1}</h4>
                   <p>{step}</p>
                 </React.Fragment>
