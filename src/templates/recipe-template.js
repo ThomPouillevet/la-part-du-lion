@@ -13,9 +13,9 @@ const RecipeTemplate = ({ data }) => {
       <StyledHero img={image.fluid} />
       <section className="recipe-template container">
         <Title text={title} />
-        <p className="duration">⏱ {duration}</p>
+        <p className="duration"><span role="img" aria-label="duration-icon">⏱</span> {duration}</p>
         <div className="ingredients-container">
-          <h3>Ingrédients 🥣</h3>
+          <h3>Ingrédients <span role="img" aria-label="ingredients-icon">🥣</span></h3>
           <div className="ingredients-list">
             {ingredients.data.map((ingredient, index) => {
               return <p key={index}>{ingredient}</p>
@@ -23,7 +23,7 @@ const RecipeTemplate = ({ data }) => {
           </div>
         </div>
         <div className="steps-container">
-          <h3>Étapes de préparation 🎨</h3>
+          <h3>Étapes de préparation <span role="img" aria-label="steps-icon">🎨</span></h3>
           <div className="steps-list">
             {steps.data.map((step, index) => {
               return (
@@ -36,7 +36,7 @@ const RecipeTemplate = ({ data }) => {
           </div>
         </div>
         <p className="author">
-          Un grand merci à {firstname} 🦁 pour cette recette.
+          Un grand merci à {firstname} <span role="img" aria-label="lion-icon">🦁</span> pour cette recette.
         </p>
       </section>
     </Layout>
